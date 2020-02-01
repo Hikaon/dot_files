@@ -1,6 +1,11 @@
 clean:
 	black .
 
-requrements:
-	rm -f requrements.txt
-	pip3 freeze > requrements.txt
+requirements:
+	rm -f requirements.txt
+	pip3 freeze > requirements.txt
+
+fullclean:
+	black .
+	mypy .
+	pylint .
